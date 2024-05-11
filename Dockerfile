@@ -1,4 +1,4 @@
-# Use the official Python image as a base image
+
 FROM python:3.9-slim
 
 # Set the working directory in the container
@@ -10,7 +10,7 @@ COPY . /app
 # Install Flask and other dependencies
 RUN pip install --no-cache-dir Flask
 
-# Expose port 5000 to the outside world
+# Expose port 5000 to be accessible
 EXPOSE 5000
 
 # Define environment variable
