@@ -4,7 +4,7 @@ def create_database():
     conn = sqlite3.connect('students.db')
     c = conn.cursor()
 
-    # Create a table to store student data with the "myID" column
+    # Create a table to store student data 
     c.execute('''CREATE TABLE IF NOT EXISTS students
                  (id INTEGER PRIMARY KEY,
                   name TEXT,
